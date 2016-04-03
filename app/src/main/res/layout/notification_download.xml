@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width = "fill_parent"
+  android:layout_height = "fill_parent"
+  android:gravity = "center_vertical"
+  android:padding="3dp"
+    >
+    <ImageView
+        android:id = "@+id/down_img"
+        android:layout_width = "wrap_content"
+        android:layout_height = "fill_parent"
+        android:layout_margin="3dp"
+        />
+
+    <TextView android:id="@+id/down_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/down_img"
+              android:gravity="center_vertical"
+              android:textSize="20sp"
+              android:textColor="#000000"
+              android:text="@string/downloading"/>
+
+    <ProgressBar android:id="@+id/pb"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:layout_below="@id/down_tv"
+                 android:layout_alignLeft="@id/down_tv"/>
+
+
+
+
+</RelativeLayout>
